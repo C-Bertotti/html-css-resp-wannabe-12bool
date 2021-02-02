@@ -2,21 +2,29 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.bg--gray { 
+    background-color: rgba(195, 195, 195, 0.2);
+}
 /* /mix */
 
 /* typo */
 h1 {
     color: #fff;
+    font-size: 35px;
 }
 
 h1 > span {
     color: #8CCEB0;
+}
+
+h1, h2 {
     font-weight: 600;
 }
 
 h2 {
-    color: #4C9286 ;
-    font-weight: 600;
+    color: #4C9286;
+    font-size: 30px;
 }
 
 h3 {
@@ -29,18 +37,23 @@ p {
     color: #828282;
     font-weight: 200;
 }
+
+.bg--gray h2 {
+    color: #164C4F;
+}
 /* /typo */
 
 
 /* header */
 header {
     background-color: #164C4F;
+    padding-top: 15px;
 }
 /* header */
 
 /* main */
 section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .section__heading {
     text-align: center;
@@ -50,44 +63,92 @@ section {
     padding: 0 30px;
 }
 .section__img {
+    margin-top: 35px;
     max-height: 100px;
 }
-.section__wrapper {
-    margin-top: 30px;
-}
 .section__hr {
-    border: 1px solid #4C9286;
-    width: 50%;
-    margin: 30px auto;
+    border: 1px solid #7AA49F;
+    width: 30%;
+    margin: 30px auto 0;
 }
+
 /* /main */
 
 /* responsive */
 /* >992px desktop */
 @media screen and (min-width:992px) {
-    
-    /* typo */
-    h1 {
-        font-size: 35px;
-    }
 
-    h2 {
-        font-size: 30px;
-    }
-
-    header { 
-        padding-top: 15px;
-    }
 }
 /* />992px desktop */
 
 /* 768 < 991px tablet */
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (max-width:991px) {
+   /* typo */
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    /* /typo */ 
+
+    /* header */
+    header {
+        padding-top: 10px;
+    }
+    /* /header */
+
+    /* main */
+    section {
+        padding: 30px 0;
+    }
+
     .section__box {
         padding: 0 20px;
     }
+    /* /main */
+       
 }
 /* /768 < 991px tablet */
+
+/* <768 phone */
 @media screen and (max-width:767px) {
-    .section__hr 
+    /* typo */
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    /* /typo */
+
+
+    /* main */
+    .section__img {
+        margin-top: 40px;
+        max-height: 80px;
+    }
+
+    .section__box {
+        padding: 0;
+    }
+    /* /main */
 }
+/* /<768 phone */
+
+  

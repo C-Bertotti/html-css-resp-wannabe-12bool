@@ -1,0 +1,75 @@
+/* mix */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* /mix */
+
+/* typo */
+h1 {
+    color: #fff;
+}
+
+h1 > span {
+    color: #8CCEB0;
+    font-weight: 600;
+}
+
+h2 {
+    color: #4C9286 ;
+    font-weight: 600;
+}
+
+h3 {
+    color:  #164C4F;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+p {
+    color: #828282;
+    font-weight: 200;
+}
+/* /typo */
+
+
+/* header */
+header {
+    background-color: #164C4F;
+}
+/* header */
+
+/* main */
+section {
+    padding: 50px 0;
+}
+.section__heading {
+    text-align: center;
+}
+.section__box {
+    text-align: center;
+    padding: 0 30px;
+}
+.section__img {
+    max-height: 100px;
+}
+.section__wrapper {
+    margin-top: 30px;
+}
+/* /main */
+
+
+@media screen and (min-width:992px) {
+    
+    /* typo */
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    header { 
+        padding-top: 15px;
+    }
+}

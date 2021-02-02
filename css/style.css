@@ -55,9 +55,15 @@ section {
 .section__wrapper {
     margin-top: 30px;
 }
+.section__hr {
+    border: 1px solid #4C9286;
+    width: 50%;
+    margin: 30px auto;
+}
 /* /main */
 
-
+/* responsive */
+/* >992px desktop */
 @media screen and (min-width:992px) {
     
     /* typo */
@@ -72,4 +78,16 @@ section {
     header { 
         padding-top: 15px;
     }
+}
+/* />992px desktop */
+
+/* 768 < 991px tablet */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .section__box {
+        padding: 0 20px;
+    }
+}
+/* /768 < 991px tablet */
+@media screen and (max-width:767px) {
+    .section__hr 
 }
